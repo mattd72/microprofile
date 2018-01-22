@@ -49,6 +49,9 @@ within the WildFly Swarm application `.jar`.
 * mvn package && java -jar ./target/example-microprofile-war-swarm.jar
 * mvn wildfly-swarm:run
 * From your IDE, run class `org.wildfly.swarm.Swarm`
+* To deploy to openshift
+    * oc new-project <project-name>
+    * mvn clean package fabric8:build fabric8:deploy 
 
 ## Use
 
