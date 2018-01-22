@@ -23,7 +23,7 @@ spec:
         - name: JAVA_APP_DIR
           value: /deployments
         - name: JAVA_OPTIONS
-          value: -Dswarm.project.stage=production
+          value: -Dswarm.project.stage=production -Djava.net.preferIPv4Stack=true
         name: example-microprofile
         image: example-microprofile:latest
         imagePullPolicy: IfNotPresent
